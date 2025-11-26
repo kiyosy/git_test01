@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World サンプル</title>
+</head>
+<body>
+  <h1 id="message">ここにメッセージが出ます</h1>
+  <button id="btn">メッセージを表示</button>
+
+  <script>
+    // ボタンがクリックされたら実行される処理
+    document.getElementById('btn').addEventListener('click', () => {
+      // 画面のテキストを書き換える
+      const msg = document.getElementById('message');
+      msg.textContent = 'Hello World! こんにちは、JavaScript！';
+    });
+  </script>
+</body>
+</html>
